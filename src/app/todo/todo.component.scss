@@ -1,0 +1,130 @@
+:host .mat-form-field {
+  width: 100%;
+}
+// mat-input carent color
+::ng-deep .mat-input-element {
+  caret-color: black;
+}
+
+// ::ng-deep .mat-form-field-type-mat-input {
+//   color: brown;
+// }
+
+::ng-deep .mat-input-underline {
+  color: grey;
+}
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+  color: rgba(0, 0, 0, 0.6) !important;
+  // color: $mainColor!important;
+}
+
+::ng-deep .mat-form-field-underline {
+  background-color: grey !important;
+}
+
+::ng-deep .mat-form-field-ripple {
+  background-color: brown !important;
+}
+
+.mat-raised-button {
+  background-color: brown;
+  color: linen;
+  width: 100%;
+  margin-top: 20px;
+}
+
+//below is the C&P css from material for the drag n drop
+
+.example-container {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 25px 25px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.example-list {
+  border: solid 1px #ccc;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+}
+
+.example-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-list {
+  margin-top: 5px;
+  // border: solid;
+  // border-color: #424242;
+  background-color: linen;
+}
+.example-box {
+  border: none;
+  // border-color: #424242;
+  background-color: rgb(206, 82, 82);
+}
+
+.box-pending {
+  border: none;
+  // border-color: #424242;
+  background-color: #20c997;
+}
+
+.box-done {
+  color: linen;
+  background-color: #424242;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.box{
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+}
+
+.hd-title {
+  margin: 0;
+  padding: 10px;
+  background-color: #424242;
+  border-radius: 4px;
+  color: linen;
+  font-size: 1.5rem;
+  font-weight: 600;
+  span{
+    font-weight: normal;
+  }
+}
